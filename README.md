@@ -5,4 +5,4 @@ Aplikasi E-Commerce menggunakan flutter, state management getx, rest api, dan go
 
 - Gambar
 
-![Img 1](screenshot/1.jpg){:height="36px" width="36px"}.
+![Img 1](screenshot/1.jpg | 250x250)
