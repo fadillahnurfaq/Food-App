@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.food_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:3:5-66
+14-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:4:5-79
+15-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:4:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:5:5-81
+16-->C:\Latihan\food_app\android\app\src\main\AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Include required permissions for Google Maps API to run. -->
+17-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
+17-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+23
+24    <queries>
+24-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+25
+26        <!-- Needs to be explicitly declared on Android R+ -->
+27        <package android:name="com.google.android.apps.maps" />
+27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+27-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+28    </queries>
+29
+30    <application
+31        android:name="android.app.Application"
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.6.0] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/launcher_icon"
+35        android:label="food_app"
+36        android:usesCleartextTraffic="true" >
+37        <activity
+38            android:name="com.example.food_app.MainActivity"
+39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+40            android:exported="true"
+41            android:hardwareAccelerated="true"
+42            android:launchMode="singleTop"
+43            android:theme="@style/LaunchTheme"
+44            android:windowSoftInputMode="adjustResize" >
+45
+46            <!--
+47                 Specifies an Android theme to apply to this Activity as soon as
+48                 the Android process has started. This theme is visible to the user
+49                 while the Flutter UI initializes. After that, this theme continues
+50                 to determine the Window background behind the Flutter UI.
+51            -->
+52            <meta-data
+53                android:name="io.flutter.embedding.android.NormalTheme"
+54                android:resource="@style/NormalTheme" />
+55
+56            <intent-filter>
+57                <action android:name="android.intent.action.MAIN" />
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+60            </intent-filter>
+61        </activity>
+62        <!--
+63             Don't delete the meta-data below.
+64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+65        -->
+66        <meta-data
+67            android:name="flutterEmbedding"
+68            android:value="2" />
+69        <meta-data
+70            android:name="com.google.android.geo.API_KEY"
+71            android:value="AIzaSyB_0G3E7An9i_2y5B14He3dOIfXb_AapcQ" />
+72
+73        <service
+73-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+74            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+74-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+75            android:enabled="true"
+75-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+76            android:exported="false"
+76-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+77            android:foregroundServiceType="location" />
+77-->[:geolocator_android] C:\Latihan\food_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+78
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+80            android:name="androidx.window.extensions"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+82        <uses-library
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+83            android:name="androidx.window.sidecar"
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+84            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+85        <uses-library
+85-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+86            android:name="org.apache.http.legacy"
+86-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+87            android:required="false" />
+87-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+88
+89        <activity
+89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+91            android:exported="false"
+91-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+92-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+93
+94        <meta-data
+94-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+95            android:name="com.google.android.gms.version"
+95-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+96            android:value="@integer/google_play_services_version" />
+96-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\fnurf\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+97    </application>
+98
+99</manifest>
