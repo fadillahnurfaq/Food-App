@@ -1,6 +1,8 @@
 # Food-App
 Aplikasi E-Commerce menggunakan flutter, state management getx, rest api, dan google maps. Tetapi masih ada masalah di google maps karena tidak memiliki api key
 
+Link aplikasi : https://drive.google.com/file/d/12hAfHF1TrHMjEOw4QVvZwbCX-H-MS-51/view?usp=share_link
+
 # Gambar Aplikasi
 
 ![Img 1](screenshot/1.png)
